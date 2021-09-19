@@ -1,8 +1,5 @@
 package pages;
 
-//import org.junit.Assert;
-//import static org.junit.Assert.assertTrue;
-//import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -63,7 +60,7 @@ public class InsurancePage_2 extends BasePage {
 
     public InsurancePage_2(WebDriver driver) {
         PageFactory.initElements(driver, this);
-        (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(mainform));
+        (new WebDriverWait(driver, 15)).until(ExpectedConditions.visibilityOf(mainform));
     }
 
     public void fillInsuranceField(String fieldName, String value) {

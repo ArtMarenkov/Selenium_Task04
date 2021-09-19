@@ -1,10 +1,8 @@
 package steps;
 
 import io.qameta.allure.Step;
-//import ru.yandex.qatools.allure.annotations.Step;
 import org.openqa.selenium.Keys;
 import pages.InsurancePage_2;
-//import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.HashMap;
 

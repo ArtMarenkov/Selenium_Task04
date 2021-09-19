@@ -1,17 +1,10 @@
 package steps;
 
-
-import cucumber.api.java.After;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
-//import io.cucumber.java.After;
-//import io.cucumber.java.en.Then;
-//import io.cucumber.java.en.When;
+import io.cucumber.java.After;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import util.TestService;
-
-import java.awt.print.Book;
-import java.util.List;
 import java.util.Map;
 
 public class ScenarioSteps {
@@ -42,7 +35,6 @@ public class ScenarioSteps {
     @When("^нажатие на кнопку Оформить$")
     public void stepCheckoutInsurance() {
         InsuranceSteps_1 insuranceSteps_1 = new InsuranceSteps_1();
-//        insuranceSteps_1.stepMinCheck();
         insuranceSteps_1.stepCheckoutInsurance();
     }
 
@@ -54,12 +46,6 @@ public class ScenarioSteps {
         for (Map.Entry<String, String> entry : rows.entrySet()) {
             insuranceSteps_2.stepFillInsuranceField(entry.getKey(), entry.getValue());
         }
-//        for (Map<String, String> columns : rows) {
-//
-//        }
-//        fields.asMap(String.class, String.class).forEach(
-//                (key, value) -> insuranceSteps_2.stepFillInsuranceField(key, value));
-
     }
 
     @When("^нажатие на кнопку Продолжить$")
